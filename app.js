@@ -103,7 +103,7 @@ app.get('/parks/:id/reviews',(req, res)=>{
 
 
 
-const port = 80
+const port = process.env.PORT || 3452
 app.listen(port, () => {
     console.log(`Serving on port ${port}`);
 })
