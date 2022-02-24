@@ -1,0 +1,54 @@
+<% layout('layouts/boilerplate')%>
+
+    <style>
+        body {
+            height: 100vh; /* 100% visible height*/
+            background-image:
+            url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/banff-national-park-canada-watercolor-by-adam-asar-adam-asar.jpg");
+            background-size: cover;
+            background-position: center;
+            text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+        }
+        .cover-container{
+            max-width: 60vw;
+        }
+    </style>
+
+<div class="container  d-flex justify-content-center align-items-center mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img src="https://i.etsystatic.com/10417785/r/il/8d593f/1608803709/il_1588xN.1608803709_pqnp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Register</h5>
+                    <form action="/register" method="POST" class="validated-form">
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <button class="btn btn-success">Register</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
